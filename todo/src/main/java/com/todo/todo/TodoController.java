@@ -2,21 +2,28 @@ package com.todo.todo;
 
 import java.util.List;
 
+import com.todo.todo.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TodoController {
-    @Autowired
-    private UserRepository userRepository;
-    
-    @GetMapping(path="/users")
+    @Autowired private UserService userService;
+
+    @GetMapping(path = "/users")
     public @ResponseBody Iterable<User> getAllUsers() {
-        // This returns a JSON or XML with the users
-        return userRepository.findAll();
+        return userService.getAllUsers();
+    }
+
+    @PostMapping("/user")
+    public User saveUser(@RequestBody User user){
+        return userService.saveUser(user);
     }
 
     @RequestMapping("/")

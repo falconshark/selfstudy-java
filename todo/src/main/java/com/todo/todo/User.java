@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 @Entity
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // ★AUTO → IDENTITYに修正
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private String username;
     private String password;
