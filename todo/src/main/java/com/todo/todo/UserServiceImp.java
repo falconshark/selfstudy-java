@@ -15,10 +15,7 @@ public class UserServiceImp implements UserService{
     // save operation
     @Override
     public User saveUser(User user) {
-        User n = new User();
-        n.setName(user.getName());
-        n.setPassword(user.getPassword());
-        return userRepository.save(n);
+        return userRepository.save(user);
     }
     @Override
     public List<User> getAllUsers() {
