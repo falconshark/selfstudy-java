@@ -1,4 +1,5 @@
-public class App {
+
+public class Base {
     // Comment and some code come from https://java.sevendays-study.com/
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
