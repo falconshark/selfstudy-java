@@ -17,6 +17,7 @@ import com.todo.todo.User.UserService;
 public class TodoController {
     @Autowired private UserService userService;
 
+    //User Part
     @GetMapping(path = "/users")
     public @ResponseBody Iterable<User> getAllUsers() {
         return userService.getAllUsers();
@@ -26,7 +27,7 @@ public class TodoController {
     public User saveUser(@RequestBody User user){
         return userService.saveUser(user);
     }
-
+    
     @RequestMapping("/")
     public String index() {
         return "Hello World!";
