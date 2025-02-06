@@ -1,4 +1,4 @@
-package com.todo.todo;
+package com.todo.todo.User;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

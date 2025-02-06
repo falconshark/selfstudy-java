@@ -1,6 +1,5 @@
-package com.todo.todo;
+package com.todo.todo.User;
 
-import com.todo.todo.User;
 import java.util.List;
 
 public interface UserService {

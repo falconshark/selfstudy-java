@@ -2,8 +2,6 @@ package com.todo.todo;
 
 import java.util.List;
 
-import com.todo.todo.UserService;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.todo.todo.User.User;
+import com.todo.todo.User.UserService;
 
 @RestController
 public class TodoController {

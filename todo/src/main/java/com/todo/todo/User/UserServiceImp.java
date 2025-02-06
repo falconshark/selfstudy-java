@@ -1,10 +1,8 @@
-package com.todo.todo;
+package com.todo.todo.User;
 
-import com.todo.todo.User;
-import com.todo.todo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
- 
+
 import java.util.List;
 
 @Service
