@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "base/src"
+        "base/src",
+        "todolist/src/main/java/com/example/todolist/todolist"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
